@@ -1,0 +1,64 @@
+<!-- <html>
+  <head>
+    <script src="javascripts/html5-qrcode.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css"/>
+  </head>
+  <body>
+    <div id="reader" width="600px"></div>
+    <script>
+      function onScanSuccess(decodedText, decodedResult) {
+        // handle the scanned code as you like, for example:
+        console.log(`Code matched = ${decodedText}`, decodedResult);
+      }
+
+      function onScanFailure(error) {
+        // handle scan failure, usually better to ignore and keep scanning.
+        // for example:
+        console.warn(`Code scan error = ${error}`);
+      }
+
+      let html5QrcodeScanner = new Html5QrcodeScanner(
+        "reader",
+        { fps: 10, qrbox: {width: 250, height: 250} },
+        /* verbose= */ false);
+      html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+    </script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student ID Verification System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1 class="compact-title">Student ID <br> Verification System</h1> <p class="welcome-message">Welcome to the student ID verification system! Accessing this system allows you to verify student IDs <br> swiftly and securely, enhancing overall security.</p>
+      <div class="instructions">
+        <h3>Here are the steps:</h3>
+        <ul>
+          <li>Upload an image file containing the student ID.</li>
+          <li>Click the "Verify ID" button.</li>
+          <li>The system will display the verification results and student details.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h2>Scan an Image File</h2>
+      <input type="file" id="student-id-file" accept="image/*">
+      <button type="button" id="verify-button">Verify ID</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

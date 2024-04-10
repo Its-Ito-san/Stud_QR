@@ -1,0 +1,63 @@
+/* Basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sree Krushnadevaraya', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin for compact layout */
+    padding: 0; /* Remove default padding for compact layout */
+  }
+  
+  /* Left section styles */
+  .left-section {
+    width: 75%;
+    padding: 10px; /* Reduced padding for less space */
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .welcome-message {
+    flex: 1;
+    font-size: 16px; /* Adjusted font size for better fit */
+    color: #2f27ce; /* Can customize this color */
+    margin-bottom: 10px; /* Reduced margin for less space */
+  }
+  
+  .instructions {
+    flex: 0.5;
+    font-size: 14px; /* Adjusted font size for better fit */
+    color: #433bff; /* Can customize this color */
+  }
+  
+  /* Right section styles */
+  .right-section {
+    width: 25%;
+    padding: 10px; /* Reduced padding for less space */
+    background-color: #e0e0e0; /* Slightly darker gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5 {
+    font-family: 'Sree Krushnadevaraya';
+    font-weight: 700;
+  }
+  
+  /* Font sizes (optional, adjust as needed) */
+  html {font-size: 100%;} /* 16px */
+  h1.compact-title {  /* Added styles for compact title */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Reduce margin for less space */
+    color: red; /* Set title color to red */
+  }
+  h2 {font-size: 1.7rem; /* Adjusted font size for better fit */}
+  h3 {font-size: 1.5rem; /* Adjusted font size for better fit */}
+  h4 {font-size: 1.2rem; /* Adjusted font size for better fit */}
+  
