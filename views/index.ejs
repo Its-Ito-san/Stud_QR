@@ -22,6 +22,9 @@
   <link href="stylesheets/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="stylesheets/responsive.css" rel="stylesheet" />
+  <script defer src="html5-qrcode.min.js"></script>  
+  <script defer src="bootbox.min.js"></script>  
+  <script defer src="javascripts/main.js"></script>
 </head>
 
 <body>
@@ -107,9 +110,10 @@
                       swiftly and securely, enhancing overall security.
                     </p>
                     <div class="btn-box">
-                      <a href=" " class="btn-1"> Verify Student </a> <!-- change the link to verification page -->
-                      <a href=" " class="btn-2">Student Details</a> <!-- change the link to see student details -->
+                      <button class="btn-1" onclick="alert(0)" id="scan"> Verify Student </button> <!-- change the link to verification page -->
+                      <button class="btn-2" id="scan-file">Upload file</button> <!-- change the link to see student details -->
                     </div>
+                    <div id="reader" style="max-width: 500px"></div>
                   </div>
                 </div>
               </div>
@@ -214,7 +218,7 @@
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form action="#">
+            <form id="contact-form">
               <div class="contact_form-container">
                 <div>
                   <div>
